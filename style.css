@@ -1,0 +1,178 @@
+.width1{
+    width: 80px;
+}
+.width2{
+    width: 704px;
+}
+.width3{
+width: 10%;
+}
+
+.p1{
+  padding-left: 103px;
+  
+}
+.mike{
+    border-radius: 50%;
+    padding: 10px;
+   
+    
+}
+.position1{
+    position: fixed;
+}
+.manage1{
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+.position2{
+   
+    margin-left: 99px;
+}
+
+.setting1{
+padding-top: 20px;
+margin: 0;
+height: 30% ;
+width: 30%;
+}
+
+.setting2{
+padding-top: 4px;
+  font-size: 10px;  
+}
+.text1{
+    font-size: 13px;
+  
+}
+
+.v{
+    list-style: none;
+}
+.button2{
+    background-color: #f84b93;
+    border-radius: 50%;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-left: 10px;
+   padding-right:10px ;
+}
+.x{
+z-index: 2;
+}
+.y{
+z-index: 1;
+}
+  .offcanvas-start {
+    width: 240px !important; 
+  }
+      header {
+      height: 56px;
+      background: white;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 2000;
+      border-bottom: 1px solid #dadce0;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      margin-right: 24px;
+    }
+    .menu-btn {
+      padding: 8px;
+      margin-right: 16px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .menu-btn:hover { background: #f2f2f2; }
+    .logo-img {
+      height: 20px;
+    }
+    .logo-in {
+      font-size: 10px;
+      color: #5f6368;
+      margin-left: 1px;
+      font-weight: 400;
+      position: relative;
+      top: -4px;
+    }
+    .search-container {
+      flex: 1;
+      max-width: 732px;
+      display: flex;
+      align-items: center;
+      margin: 0 40px;
+    }
+    .search-box {
+      flex: 1;
+      height: 40px;
+      border: 1px solid #d3d3d3;
+      border-right: none;
+      border-radius: 40px 0 0 40px;
+      padding: 0 16px;
+      font-size: 16px;
+      outline: none;
+    }
+    .search-btn {
+      width: 64px;
+      height: 40px;
+      background: #f8f8f8;
+      border: 1px solid #d3d3d3;
+      border-left: none;
+      border-radius: 0 40px 40px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .search-btn:hover, .mic-btn:hover, .create-btn:hover, .bell-btn:hover { background: #f0f0f0; }
+    .mic-btn {
+      width: 40px;
+      height: 40px;
+      background: #f9f9f9;
+      border-radius: 50%;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .right-icons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .create-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: transparent;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .bell-btn, .profile-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .profile-btn {
+      background: #d93025;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+    }

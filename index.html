@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <header>
+  <!-- Left -->
+  <div class="logo-container">
+    <div class="menu-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#5f6368">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </div>
+  
+      <img src="./image/e98f9104-e212-4c43-80d6-4c955cc5b3b5.jpg" alt="YouTube" class="logo-img">
+  
+   
+  </div>
+
+  <!-- Center Search -->
+  <div class="search-container">
+    <input type="text" class="search-box" placeholder="Search">
+    <div class="search-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#5f6368">
+        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+      </svg>
+    </div>
+    <div class="mic-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#5f6368">
+        <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 14.2 14.47 16 12 16s-4.52-1.8-4.93-4.15a.998.998 0 00-.98-.85c-.61 0-1.1.53-1 1.13C5.63 15.18 8.08 18 12 18s6.37-2.82 6.91-5.87c.1-.6-.39-1.13-1-1.13z"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Right -->
+  <div class="right-icons">
+    <button class="create-btn d-none d-lg-flex">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#5f6368">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+      </svg>
+      Create
+    </button>
+    <div class="bell-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#5f6368">
+        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+      </svg>
+    </div>
+    <div class="profile-btn">A</div>
+  </div>
+</header>
+<div class="container-fluid mt-5 y">
+    <div class="row p-0">
+   <div class="col-1">
+  <ul class="p-0 m-0 list-unstyled d-flex flex-column align-items-center">
+
+    <!-- Home -->
+    <li class="setting1 text-center mb-3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" width="24"
+        viewBox="0 0 24 24" style="pointer-events:none;">
+        <path clip-rule="evenodd"
+          d="M22.146 11.146a.5.5 0 01-.353.854H20v7.5a1.5 1.5 0 01-1.5 1.5h-5v-7h-3v7h-5A1.5 1.5 0 014 19.5V12H2.207a.5.5 0 01-.353-.854L12 1l10.146 10.146ZM18.5 9.621l-6.5-6.5-6.5 6.5V19.5H9V13a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v6.5h3.5V9.621Z"
+          fill-rule="evenodd"></path>
+      </svg>
+    </li>
+
+    <!-- Shorts -->
+    <li class="setting1 text-center mb-3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" width="24"
+        viewBox="0 0 24 24" style="pointer-events:none;">
+        <path clip-rule="evenodd"
+          d="m7.61 15.719.392-.22v-2.24l-.534-.228-.942-.404c-.869-.372-1.4-1.15-1.446-1.974-.047-.823.39-1.642 1.203-2.097h.001L15.13 3.59c1.231-.689 2.785-.27 3.466.833.652 1.058.313 2.452-.879 3.118l-1.327.743-.388.217v2.243l.53.227.942.404c.869.372 1.4 1.15 1.446 1.974.047.823-.39 1.642-1.203 2.097l-.002.001-8.845 4.964-.001.001c-1.231.688-2.784.269-3.465-.834-.652-1.058-.313-2.451.879-3.118l1.327-.742Zm1.993 6.002c-1.905 1.066-4.356.46-5.475-1.355-1.057-1.713-.548-3.89 1.117-5.025a4.14 4.14 0 01.305-.189l1.327-.742-.942-.404a4.055 4.055 0 01-.709-.391c-.963-.666-1.578-1.718-1.644-2.877-.08-1.422.679-2.77 1.968-3.49l8.847-4.966c1.905-1.066 4.356-.46 5.475 1.355 1.057 1.713.548 3.89-1.117 5.025a4.074 4.074 0 01-.305.19l-1.327.742.942.403c.253.109.49.24.709.392.963.666 1.578 1.717 1.644 2.876.08 1.423-.679 2.77-1.968 3.491l-8.847 4.965ZM10 14.567a.25.25 0 00.374.217l4.45-2.567a.25.25 0 000-.433l-4.45-2.567a.25.25 0 00-.374.216v5.134Z"
+          fill-rule="evenodd"></path>
+      </svg>
+    </li>
+
+    <!-- Subscriptions -->
+    <li class="setting1 text-center mb-3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" width="24"
+        viewBox="0 0 24 24" style="pointer-events:none;">
+        <path clip-rule="evenodd"
+          d="M5.5 3A1.5 1.5 0 004 4.5h16A1.5 1.5 0 0018.5 3h-13ZM2 7.5A1.5 1.5 0 013.5 6h17A1.5 1.5 0 0122 7.5v11a1.5 1.5 0 01-1.5 1.5h-17A1.5 1.5 0 012 18.5v-11Zm8 2.87a.5.5 0 01.752-.431L16 13l-5.248 3.061A.5.5 0 0110 15.63v-5.26Z"
+          fill-rule="evenodd"></path>
+      </svg>
+    </li>
+
+    <!-- You -->
+    <li class="setting1 text-center mb-3">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" width="24"
+        viewBox="0 0 24 24" style="pointer-events:none;">
+        <path clip-rule="evenodd"
+          d="M12 20.5c1.894 0 3.643-.62 5.055-1.666a5.5 5.5 0 00-10.064-.105.755.755 0 01-.054.099A8.462 8.462 0 0012 20.5Zm4.079-5.189a7 7 0 012.142 2.48 8.5 8.5 0 10-12.443 0 7 7 0 0110.3-2.48ZM12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm2-12.5a2 2 0 11-4 0 2 2 0 014 0Zm1.5 0a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0Z"
+          fill-rule="evenodd"></path>
+      </svg>
+    </li>
+
+    <!-- Download Icon (Your given icon) -->
+    <li class="setting1 text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" width="24"
+        viewBox="0 0 24 24">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M12 3a1 1 0 011 1v10.586l3.293-3.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L11 14.586V4a1 1 0 011-1Zm-9 15a1 1 0 011-1h16a1 1 0 110 2H4a1 1 0 01-1-1Z"></path>
+      </svg>
+    </li>
+
+  </ul>
+</div>
+
+      <div class="col-11">
+       <div class="row mb-2 pt-4 pb-2">
+  <div class="col-8">
+    <h4>Latest</h4>
+  </div>
+  <div class="col-4">
+    <ul class="d-flex justify-content-end align-items-center gap-4 list-unstyled m-0">
+      <li>
+        <a class="manage1" href="">Manage</a>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="black" viewBox="0 0 24 24">
+          <rect x="3" y="2" width="5" height="6" />
+          <rect x="9.5" y="2" width="5" height="6" />
+          <rect x="16" y="2" width="5" height="6" />
+          <rect x="3" y="9.5" width="5" height="6" />
+          <rect x="9.5" y="9.5" width="5" height="6" />
+          <rect x="16" y="9.5" width="5" height="6" />
+        </svg>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" viewBox="0 0 28 24">
+          <circle cx="2" cy="5" r="1.5" />
+          <rect x="8" y="4" width="21" height="1" />
+          <circle cx="2" cy="12" r="1.5" />
+          <rect x="8" y="11" width="21" height="1" />
+          <circle cx="2" cy="19" r="1.5" />
+          <rect x="8" y="18" width="21" height="1" />
+        </svg>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="row">
+
+  <!-- 1. Fevicol Se 8K -->
+ <div class="col-4">
+    <video class="rounded-3 video-hover" width="100%" muted loop playsinline poster="https://i.ytimg.com/vi/Gng8TQ8tGPQ/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAZoc3EZjJtRuxih2rXuiFG5OjJWQ">
+      <source src="./video/Death Route (Video Song) _ Sidhu Moose Wala _ PBX 1 _ Intense.mp4" type="video/mp4">
+    </video>
+    <div class="row mt-2">
+      <div class="col-2 p-0">
+        <img height="28%" width="60%" class="ms-3" src="https://yt3.ggpht.com/VunTf0NzCeboiPjbesBdnQuxaF3Lja7UGRbBGQAWRJgMSTj9TTLO3pS1X9qPOJGCNnmPrXeY=s68-c-k-c0x00ffffff-no-rj-mo" alt="">
+      </div>
+      <div class="col-10 p-0">
+        <h6 class="m-0">Death Route (Video Song) | Sidhu Moose Wala | PBX 1 | Intense</h6>
+        <div class="row mt-1 d-flex">
+          <div class="col-2 text1 tseries py-1 p-0 ps-0 flex-column text-end d-flex">T-Series</div>
+          <div class="col-10 p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi ms-1 bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-5 text1">177K views · 2 weeks ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. MrBeast Trap -->
+  <div class="col-4">
+    <video class="rounded-3 video-hover" width="100%" muted loop playsinline poster="https://i.ytimg.com/vi/3RmOvxilbPM/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA0fjVUvkK81JRdMEuA52FOdGL-lg">
+      <source src="./video/100 People Vs World’s Biggest Trap!.mp4" type="video/mp4">
+    </video>
+    <div class="row mt-2">
+      <div class="col-2 p-0">
+        <img height="28%" width="60%" class="ms-3" src="https://yt3.ggpht.com/ytc/AIdro_mVLJ2ft7J8G26w7O9f_2rX0i1ZfK7e8k7e8k7e8g=s68-c-k-c0x00ffffff-no-rj" alt="">
+      </div>
+      <div class="col-10 p-0">
+        <h6 class="m-0">100 People Vs World's Biggest Trap!</h6>
+        <div class="row mt-1 d-flex">
+          <div class="col-2 text1 tseries py-1 p-0 ps-0 flex-column text-end d-flex">MrBeast</div>
+          <div class="col-10 p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi ms-1 bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-5 text1">59M views · 6 days ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Jana Nayagan -->
+  <div class="col-4">
+    <video class="rounded-3 video-hover" width="100%" muted loop playsinline poster="https://i.ytimg.com/vi/KgpnfT5bgLY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDV7KvTr8n3FPiGgOkCA9iWKgNXiA">
+      <source src="./video/Jana Nayagan – Thalapathy Kacheri Lyric Video_ Thalapathy Vijay_ H Vinoth_ Anirudh_ Pooja Hegde_ KVN.mp4" type="video/mp4">
+    </video>
+    <div class="row mt-2">
+      <div class="col-2 p-0">
+        <img height="28%" width="60%" class="ms-3" src="https://yt3.ggpht.com/VunTf0NzCeboiPjbesBdnQuxaF3Lja7UGRbBGQAWRJgMSTj9TTLO3pS1X9qPOJGCNnmPrXeY=s68-c-k-c0x00ffffff-no-rj-mo" alt="">
+      </div>
+      <div class="col-10 p-0">
+        <h6 class="m-0">Jana Nayagan – Thalapathy Kacheri Lyric Video | Thalapathy Vijay | Anirudh</h6>
+        <div class="row mt-1 d-flex">
+          <div class="col-2 text1 tseries py-1 p-0 ps-0 flex-column text-end d-flex">T-Series</div>
+          <div class="col-10 p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi ms-1 bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-5 text1">50M views · 6 days ago</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<div class="row">
+
+  <!-- 4. CHILLGUM - Yo Yo Honey Singh -->
+  <div class="col-4">
+    <video class="rounded-3 video-hover" width="100%" muted loop playsinline poster="https://i.ytimg.com/vi/cTokGAQAaK4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDN8oed7ES4b8XK3-wG69TbHppjxQ">
+      <source src="./video/CHILLGUM (Official Video)_ YO YO HONEY SINGH _ MALAIKA ARORA _ 51 GLORIOUS DAYS _ BHUSHAN KUMAR.mp4" type="video/mp4">
+    </video>
+    <div class="row mt-2">
+      <div class="col-2 p-0">
+        <img height="28%" width="60%" class="ms-3" src="https://yt3.ggpht.com/VunTf0NzCeboiPjbesBdnQuxaF3Lja7UGRbBGQAWRJgMSTj9TTLO3pS1X9qPOJGCNnmPrXeY=s68-c-k-c0x00ffffff-no-rj-mo" alt="">
+      </div>
+      <div class="col-10 p-0">
+        <h6 class="m-0">CHILLGUM (Official Video): YO YO HONEY SINGH | MALAIKA ARORA | 51 Glorious Days</h6>
+        <div class="row mt-1 d-flex">
+          <div class="col-2 text1 tseries py-1 p-0 ps-0 flex-column text-end d-flex">T-Series</div>
+          <div class="col-10 p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi ms-1 bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-5 text1">26M views · 7 days ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. VAILLY - Bhupinder Babbal -->
+  <div class="col-4">
+    <video class="rounded-3 video-hover" width="100%" muted loop playsinline poster="https://i.ytimg.com/vi/bkOy_rGXR2k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDiyYCVOthoTy6EgH9EH1EvKDBk8w">
+      <source src="./video/VAILLY (Music Video)_ BHUPINDER BABBAL _ Feat. RANJEET _ PARADOX _ NEW PUNJABI SONG _ BHUSHAN KUMAR.mp4" type="video/mp4">
+    </video>
+    <div class="row mt-2">
+      <div class="col-2 p-0">
+        <img height="28%" width="60%" class="ms-3" src="https://yt3.ggpht.com/VunTf0NzCeboiPjbesBdnQuxaF3Lja7UGRbBGQAWRJgMSTj9TTLO3pS1X9qPOJGCNnmPrXeY=s68-c-k-c0x00ffffff-no-rj-mo" alt="">
+      </div>
+      <div class="col-10 p-0">
+        <h6 class="m-0">VAILLY (Music Video): BHUPINDER BABBAL | Feat. RANJEET | PARADOX | NEW PUNJABI SONG</h6>
+        <div class="row mt-1 d-flex">
+          <div class="col-2 text1 tseries py-1 p-0 ps-0 flex-column text-end d-flex">T-Series</div>
+          <div class="col-10 p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi ms-1 bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-5 text1">4.1M views · 7 days ago</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Chikiri Chikiri - Peddi Ram Charan -->
+  <div class="col-4">
+    <video class="rounded-3 video-hover" width="100%" muted loop playsinline poster="https://i.ytimg.com/vi/4H_1QlPYkk4/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDG3UaiTTkvHuksLaXWz0GztlrPxw">
+      <source src="./video/Chikiri Chikiri Song Promo (Hindi) _ Peddi _ Ramcharan _ Janhvi _ Buchi Babu Sana _ AR Rahman.mp4" type="video/mp4">
+    </video>
+    <div class="row mt-2">
+      <div class="col-2 p-0">
+        <img height="28%" width="60%" class="ms-3" src="https://yt3.ggpht.com/VunTf0NzCeboiPjbesBdnQuxaF3Lja7UGRbBGQAWRJgMSTj9TTLO3pS1X9qPOJGCNnmPrXeY=s68-c-k-c0x00ffffff-no-rj-mo" alt="">
+      </div>
+      <div class="col-10 p-0">
+        <h6 class="m-0">Chikiri Chikiri Video Song (Hindi) | Peddi | Ram Charan | Janhvi | A R Rahman | Mohit</h6>
+        <div class="row mt-1 d-flex">
+          <div class="col-2 text1 tseries py-1 p-0 ps-0 flex-column text-end d-flex">T-Series</div>
+          <div class="col-10 p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi ms-1 bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-5 text1">18M views · 8 days ago</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<div class="row">
+
+  <!-- 1. De De Pyaar De 2 - Audio Jukebox -->
+  <div class="col-4">
+    <video class="rounded-3 video-hover" width="100%" muted loop playsinline poster="https://i.ytimg.com/vi/kh0C-MPlopc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDABYfWMwClCd-X9nhjrWq7-pLCOw">
+      <source src="./video/de-de-pyaar-de-2-jukebox.mp4" type="video/mp4">
+    </video>
+    <div class="row mt-2">
+      <div class="col-2 p-0">
+        <img height="28%" width="60%" class="ms-3" src="https://yt3.ggpht.com/VunTf0NzCeboiPjbesBdnQuxaF3Lja7UGRbBGQAWRJgMSTj9TTLO3pS1X9qPOJGCNnmPrXeY=s68-c-k-c0x00ffffff-no-rj-mo" alt="">
+      </div>
+      <div class="col-10 p-0">
+        <h6 class="m-0">De De Pyaar De 2 - Audio Jukebox | Ajay Devgn, Rakul Singh, R. Madhavan, Meezaan Jafri | 14th Nov</h6>
+        <div class="row mt-1 d-flex">
+          <div class="col-2 text1 tseries py-1 p-0 ps-0 flex-column text-end d-flex">T-Series</div>
+          <div class="col-10 p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi ms-1 bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-5 text1">113K views · 8 days ago</p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="col-4">
+    <video class="rounded-3 video-hover" width="100%" muted loop playsinline poster="https://i.ytimg.com/vi/zo-50e1SDHQ/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBogl_k9MyvUIIPyqs_BAjt5OElEQ">
+      <source src="./video/killa.mp4" type="video/mp4">
+    </video>
+    <div class="row mt-2">
+      <div class="col-2 p-0">
+        <img height="28%" width="60%" class="ms-3" src="https://yt3.ggpht.com/VunTf0NzCeboiPjbesBdnQuxaF3Lja7UGRbBGQAWRJgMSTj9TTLO3pS1X9qPOJGCNnmPrXeY=s68-c-k-c0x00ffffff-no-rj-mo" alt="">
+      </div>
+      <div class="col-10 p-0">
+        <h6 class="m-0">GURU RANDHAWA - KILLA - MV - BHUSHAN KUMAR</h6>
+        <div class="row mt-1 d-flex">
+          <div class="col-2 text1 tseries py-1 p-0 ps-0 flex-column text-end d-flex">T-Series</div>
+          <div class="col-10 p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi ms-1 bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-5 text1">9.7M views · 2 weeks ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <video class="rounded-3 video-hover" width="100%" muted loop playsinline poster="https://i.ytimg.com/vi/s92ZDwDbmqw/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBG6XTJvoGchxQ_EdSnMWl3lKZk_A">
+      <source src="./video/dariya.mp4" type="video/mp4">
+    </video>
+    <div class="row mt-2">
+      <div class="col-2 p-0">
+        <img height="28%" width="60%" class="ms-3" src="https://yt3.ggpht.com/VunTf0NzCeboiPjbesBdnQuxaF3Lja7UGRbBGQAWRJgMSTj9TTLO3pS1X9qPOJGCNnmPrXeY=s68-c-k-c0x00ffffff-no-rj-mo" alt="">
+      </div>
+      <div class="col-10 p-0">
+        <h6 class="m-0">Dariya (Lyrical Video) | The Girlfriend | Rashmika Mandanna | Dheekshith Shetty | Hesham | Rakendu M</h6>
+        <div class="row mt-1 d-flex">
+          <div class="col-2 text1 tseries py-1 p-0 ps-0 flex-column text-end d-flex">T-Series</div>
+          <div class="col-10 p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi ms-1 bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <p class="mb-5 text1">195K views · 10 days ago</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const videos = document.querySelectorAll('.video-hover');
+
+    videos.forEach(video => {
+      video.addEventListener('mouseenter', () => {
+        video.currentTime = 0;
+        video.play();
+      });
+
+      video.addEventListener('mouseleave', () => {
+        video.pause();
+        video.load(); 
+      });
+    });
+  });
+</script>
+
+
+    
+
+
+</body>
+</html>
